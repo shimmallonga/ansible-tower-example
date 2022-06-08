@@ -6,3 +6,5 @@
         msg: "Hello World!"
     - name: Netstat
       command: netstat -rn
+      register: output
+    - debug: output
