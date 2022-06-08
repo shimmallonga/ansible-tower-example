@@ -11,3 +11,11 @@
     - name: Print it
       debug: 
         msg: "{{ outputroute }}"
+
+    - name: Ping
+      command: ping 192.168.50.169 -c 5
+      register: outputroute
+      
+    - name: Print it
+      debug: 
+        msg: "{{ outputroute }}"
