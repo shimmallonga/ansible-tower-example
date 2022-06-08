@@ -6,5 +6,8 @@
         msg: "Hello World!"
     - name: Netstat
       command: netstat -rn
-      register: output
-    - debug: output
+      register: outputroute
+      
+    - name: Print it
+      debug: outputroute
+      msg: "{{ outputroute }}"
