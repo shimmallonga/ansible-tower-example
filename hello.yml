@@ -9,5 +9,5 @@
       register: outputroute
       
     - name: Print it
-      debug: outputroute
-      msg: "{{ outputroute }}"
+      debug: 
+        msg: "{{ outputroute }}"
